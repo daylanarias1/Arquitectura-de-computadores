@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      
+    background-color: rgb(231, 231, 231);
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      color: #ffd700; /* Cambia el color al hacer hover */
+    }
+
+    nav a:active {
+      color: red; /* Cambia el color al hacer clic */
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      display: none;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      height: 50px;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+  <title>Tu Página</title>
+</head>
+<body>
+
+  <nav>
+    <a href="./index.html">Home</a>
+
+    <div>
+      <a href="#" onclick="mostrarSeccion('seccion1')">Laboratorio 1</a>
+      <a href="#" onclick="mostrarSeccion('seccion2')">Laboratorio 2</a>
+      <a href="#" onclick="mostrarSeccion('seccion3')">Laboratorio 3</a>
+      <a href="#" onclick="mostrarSeccion('seccion4')">Laboratorio 4</a>
+      <a href="#" onclick="mostrarSeccion('seccion5')">Laboratorio 5</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="seccion1">
+      <div class="accordion-item">
+        <h2 class="accordion-header ">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Lunes 28 de Agosto
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            <p>En está clase hicimos la introdución a los circuitos de manera practica, elaboramos 4 circuitos los cuales fueron:</p><br>
+
+            <br><br>
+            <p><Strong>Circuito Simple</Strong></p>
+            <p>Aquí se muestra un ejemplo de un circuito muy simple el cual solo está compuesto por la fuente de alimentacion que es de 9V, una resistencia y un LED. En la imagen adjunta se muestra la formula para obtener la resistencia adecuada para el componente LED.</p>
+            <img src="media/imagen28Agosto04.jpg" alt="imagen no encontrada">
+            <p>El ejemplo hecho en el laboratrio cuenta con dos resistencias ya que no contabamos con una específica para el ejmplo, por lo cual utilizamos dos para cumplir con el cálculo.</p>
+            <img src="media/imagen28Agosto05.jpg" alt="imagen no encontrada">
+            
+            <br><br>
+            <p><Strong>Circuito en serie</Strong></p>
+            <p>Aquí se muestra un ejemplo de un circuito en serie </p>
+            <img src="media/imagen28Agosto03.jpg" alt="imagen no encontrada">
+            <img src="media/imagen28Agosto07.jpg" alt="imagen no encontrada">
+
+            <br><br>
+            <p><Strong>Circuito paralelo</Strong></p>
+            <p>Aquí se muestra un ejemplo de un circuito paralelo</p>
+            <img src="media/imagen28Agosto02.jpg" alt="imagen no encontrada">
+            <img src="media/imagen28Agosto06.jpg" alt="imagen no encontrada">
+            <p>Este es otro ejemplo de un circuito en paralelo, los dos led estan en paralelo tomando la ennergía de la fuente</p>
+            <img src="media/imagen28Agosto08.jpg" alt="imagen no encontrada">
+
+            <br><br>
+            <p><Strong>Circuito Simple con pulsador</Strong></p>
+            <p>Aquí se muestra un ejemplo de un circuito simple con un pulsador</p>
+            <img src="media/imagen28Agosto01.jpg" alt="imagen no encontrada">
+
+            <video  controls>
+              <source src="media/video28Agosto_1.mp4" type="video/mp4">
+            </video>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seccion2">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Lunes 11 de Septiembre
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>En está clase continuamos con la creación de circuitos de manera practica. Todos los circuitos realizados en este laboratorio contenían un regulador de voltaje 7805CT obteniendo como resultado 5V.</p><br>
+
+            <br><br>
+            <p><Strong>Diagrama</Strong></p>
+            <p>Partiendo de este diagrama, lo primero que realizamos fue un circuito "AND" y "OR" sin utilzar una compuerta and 7408 o una compuerta or 7432. Posteriormente realizamos lo los mismos circuitos pero esta vez utulizando las compuertas logicas.</p>
+            <img src="media/imagen11septiembre01.jpg" alt="imagen no encontrada">
+            
+            <br><br>
+            <p><Strong>AND</Strong></p>
+            <p>Aquí se muestra un ejemplo del circuito AND sin utilizar todavia la compuerta logica. Como se muestra en la imagen, para que el circuito se complete y la luz led encienda se necesita presionar los dos pulsador para satisfacer la condición "AND"</p>
+            <img src="media/imagen11septiembre02.jpg" alt="imagen no encontrada">
+           
+
+            <br><br>
+            <p><Strong>OR</Strong></p>
+            <p>Aquí se muestra un ejemplo del circuito OR sin utilizar todavia la compuerta logica. Como se muestra en la imagen, para que el circuito se complete y la luz led encienda se necesita presionar uno de los dos pulsadores para satisfacer la condición "OR"</p><br>
+            <img src="media/imagen11septiembre03.jpg" alt="imagen no encontrada">
+            <p>Cicuito "OR" solo presionando el pulsador amarillo</p><br> <br>
+            <img src="media/imagen11septiembre04.jpg" alt="imagen no encontrada">
+            <p>Cicuito "OR" solo presionando el pulsador rojo</p><br> 
+            
+
+            <br><br>
+            <p><Strong>AND (con compuerta)</Strong></p>
+            Aquí se muestra un ejemplo del circuito AND utilizando la compuerta logica. Como se muestra en la imagen, para que el circuito se complete y la luz led encienda se necesita presionar los dos pulsador para satisfacer la condición "AND"</p>
+            <img src="media/imagen11septiembre05.jpg" alt="imagen no encontrada">
+
+            
+
+            <br><br>
+            <p><Strong>OR (con compuerta )</Strong></p>
+            <p>Aquí se muestra un ejemplo del circuito OR utlizando la compuerta logica. Como se muestra en la imagen, para que el circuito se complete y la luz led encienda se necesita presionar uno de los dos pulsadores para satisfacer la condición "OR"</p><br><br><br>
+            <p>Presionando el pulsador amarillo</p>
+            <img src="media/imagen11septiembre06.jpg" alt="imagen no encontrada"><br><br>
+            <p>Presionando el pulsador rojo</p>
+            <img src="media/imagen11septiembre07.jpg" alt="imagen no encontrada">
+
+           
+
+            <br><br>
+            <p><Strong>Circuitos de Funciones</Strong></p>
+            <p>Realizamos un circuito basado en dos funciones brindadas por el profesor, las cuales tuvimos que simplificar para despues realizar el circuito y realizarlo en la protoboard.</p><br><br><br>
+            <img src="media/imagen11septiembre08.jpg" alt="imagen no encontrada"><br><br><br>
+            <p>Funcion 1 (Con solo pulsador X/rojo) </p>
+            <img src="media/imagen11septiembre07.jpg" alt="imagen no encontrada"><br><br>
+            <p>Funcion 1 (Presionando pulsadador X y Y al mismo tiempo) </p>
+            <img src="media/imagen11septiembre010.jpg" alt="imagen no encontrada"><br><br>
+            <p>Funcion 2.</p>
+            <img src="media/imagen11septiembre09.jpg" alt="imagen no encontrada"><br><br>
+
+            <br><br><br>
+            <p></p>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seccion3">
+      
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Lunes 25 de Septiembre
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>En este laboratorio aplicamos la teoría vista en clases anteriores de circuitos combinacinales de forma practica. Todos los circuitos realizados en este laboratorio contenían un regulador de voltaje 7805CT obteniendo como resultado 5V.</p><br>
+
+            <br><br>
+            <p><Strong>Diagrama (Medio sumador)</Strong></p>
+            <p>Tomando como base este diagrama de medio sumador realizamos el ejemplo del circuito.</p>
+            <img src="media/imagen25septiembre01.jpg" alt="imagen no encontrada">
+            
+            <br><br>
+            <p>Aquí se muestra un ejemplo del diagrama anterior del medio sumador. En este circuito utilizamos una compuerta AND y XOR</p>
+            <video  controls>
+              <source src="media/video25septiembre01.mp4" type="video/mp4">
+            </video>
+
+
+            <br><br>
+            <p><Strong>Diagrama (Sumador completo)</Strong></p>
+            <p>Tomando como base este diagrama de sumador completo realizamos el ejemplo del circuito.</p>
+            <img src="media/imagen25septiembre02.jpg" alt="imagen no encontrada">
+            
+            <br><br>
+            <p>Aquí se muestra un ejemplo del diagrama anterior del sumador completo. En este circuito utilizamos una compuerta AND y XOR</p>
+            <video  controls>
+              <source src="media/video25septiembre02.mp4" type="video/mp4">
+            </video>
+
+           
+
+            <br><br>
+            <p><Strong>Diagrama (Restador binario)</Strong></p>
+            <p>Tomando como base este diagrama de restador binario realizamos el ejemplo del circuito.</p>
+            <img src="media/imagen25septiembre03.jpg" alt="imagen no encontrada">
+            
+            <br><br>
+            <p>Aquí se muestra un ejemplo del diagrama anterior del restador binario. En este circuito utilizamos una compuerta NOT, AND y XOR</p>
+            <video  controls>
+              <source src="media/video25septiembre03.mp4" type="video/mp4">
+            </video>
+           
+
+           
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="seccion4">
+      <div class="accordion-item" >
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Miércoles 1 de Noviembre
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+          
+            <p>En este laboratorio se realizó la conexión entre el controlador(Previamente ensamblado siguiendo los pasos del profesor y con el codigo cargado) y el "Puente H".</p><br>
+            <p>• Un Puente en H es un circuito electrónico que generalmente se usa para permitir a un motor eléctrico DC girar en ambos sentidos, avance y retroceso. Son ampliamente usados en robótica y como convertidores de potencia.</p>
+            <p>• El motor DC 12V es un motor que sirve para diversas aplicaciones, tiene una alimentación de 12V y puede generar revoluciones de hasta 5300 RPM</p>
+            <p>Seguidamente se alimento al "Puente H" con 5v el cual a su vez alimentaba a la protoboard con el controlador.</p>
+            <p>Se utizó el codigo cargado en el controlar el cual encendia y apaga un led repetitivamente esto con el fin de observar al motor DC en movimiento el cual fue el obectivo del laboratorio.</p>
+            <br>
+            <br>
+            <p>A continuación se muestra el video donde se muestra el laboratorio:</p>
+            <video  controls>
+              <source src="media/video01noviembre.mp4" type="video/mp4">
+            </video>
+
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="seccion5">
+      <div class="accordion-item" >
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Lunes 6 de Noviembre
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+          
+            <p>Este mas que un laboratrio fue una investigación que tuvo como propósito documentar el proceso de implementación de una comunicación serial efectiva entre un microcontrolador ATMEGA, específicamente en la placa Arduino, y un ordenador que ejecuta una aplicación desarrollada en Java. El objetivo principal de esta investigación fue comprender y describir cómo lograr esta comunicación de manera eficaz para un propósito específico. Además de abordar los aspectos teóricos de esta implementación, se presenta una implementación práctica en forma de juego, demostrando la utilidad de esta conexión en aplicaciones interactivas, se presenta una implementación práctica en forma de juego.
+            </p>
+            <p>A continuación se muestra imagenes donde se muestra la investigación en su forma práctica:</p>
+            
+            <img src="media/imagen6noviembre01.jpg" alt="imagen no encontrada">
+            <br>
+            <img src="media/imagen6noviembre02.jpg" alt="imagen no encontrada">
+            
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Daylan Arias Masis</p>
+  </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      // Oculta todas las secciones
+      document.querySelectorAll('main section').forEach(function(section) {
+        section.style.display = 'none';
+      });
+
+      // Muestra la sección correspondiente
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+.section_home{
+  margin: 50px 0 50px 0;
+  display: flex;
+  justify-content: center;       
+}
+
+.accordion-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer{
+  padding: 0 20px;
+  margin-top: 300px;
+}
+
+video{
+  width: 320px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 1s;
+}
+video:hover{
+  transform: scale(1.03);
+}
+
+img{
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 320px;
+}
+
+
+
+@media all and (max-width:380px) {
+  video{
+    width: 95%;
+  }
+
+  img{
+    width: 95%;
+  }
+  .autores{
+    font-size: 0.8rem;
+  }
+}
