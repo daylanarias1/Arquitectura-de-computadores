@@ -1,48 +1,132 @@
-
-.section_home{
-  margin: 50px 0 50px 0;
-  display: flex;
-  justify-content: center;       
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(231, 231, 231);
+    letter-spacing: 0.6px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
 }
 
-.accordion-body{
-  display: flex;
-  flex-direction: column;
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fija el nav en la parte superior de la pantalla */
+    width: 100%; /* Ocupa el 100% del ancho */
+    top: 0; /* Se ubica en la parte superior */
+    z-index: 1000; /* Asegura que esté por encima del resto del contenido */
 }
 
-.footer{
-  padding: 0 20px;
-  margin-top: 300px;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    cursor: pointer;
 }
 
-video{
-  width: 320px;
-  margin-bottom: 20px;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: 1s;
-}
-video:hover{
-  transform: scale(1.03);
+nav a:hover {
+    color: #ffd700; /* Cambia el color al hacer hover */
 }
 
-img{
-  border-radius: 15px;
-  margin-bottom: 20px;
-  width: 320px;
+nav a:active {
+    color: red; /* Cambia el color al hacer clic */
+}
+
+main {
+    padding-top: 6rem; /* Ajusta el espacio superior para evitar que el contenido se oculte detrás del nav fijo */
+}
+
+section {
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
 }
 
 
+            .laboratorio{
+          display: flex;
+          align-items: center;
+        }
 
-@media all and (max-width:380px) {
-  video{
-    width: 95%;
-  }
+.laboratorio-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.laboratorio-body img {
+    width: 80%; /* Puedes ajustar el porcentaje según tus necesidades */
+    max-width: 100%; /* Garantiza que la imagen no sea más grande que su tamaño nativo */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
 
-  img{
-    width: 95%;
-  }
-  .autores{
-    font-size: 0.8rem;
-  }
+.laboratorio-body video {
+    width: 80vw; /* Ancho del 80% del viewport width */
+    max-width: 100%; /* Garantiza que el video no sea más grande que su tamaño nativo */
+    height: auto; /* Mantiene la proporción original del video */
+}
+
+/* Media query para dispositivos más grandes */
+@media (min-width: 768px) {
+    .laboratorio-body {
+        max-width: 1000px;
+    }
+}
+
+    /* Estilos para pantallas más grandes */
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+/* Estilos para pantallas más pequeñas */
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 1000px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
 }

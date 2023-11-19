@@ -1,36 +1,130 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-  :root {
-    --theme-bg-color: rgba(16, 18, 27, 0.496);/*original*/
-    /*--theme-bg-color: rgba(9, 71, 55, 0.418);/**/
-    --border-color: rgba(113 119 144 / 25%);
-    --theme-color: #f9fafb;
-    --inactive-color: rgba(35, 38, 51, 0.78);
-    --body-font: "Poppins", sans-serif;
-    --hover-menu-bg: rgba(12 15 25 / 30%);
-    --content-title-color: #999ba5;
-    --content-bg: rgb(146 151 179 / 13%);
-    --button-inactive: rgb(249 250 251 / 55%);
-    --dropdown-bg: #21242d;
-    --dropdown-hover: rgb(42 46 60);
-    --popup-bg: rgb(22 25 37);
-    --search-bg:  #14162b;
-    --overlay-bg: rgba(36, 39, 59, 0.3);
-    --scrollbar-bg: rgb(1 2 3 / 40%);
-  
-    /*fonts*/
-    --whiteColor-text:  rgba(240, 248, 255, 0.636);
-    --PT-Sans: 'PT Sans', sans-serif; 
-    --Open-Sans: 'Open Sans', sans-serif; 
-   }  
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 
+body {
+  line-height: 1;
+}
 
+ol,
+ul {
+  list-style: none;
+}
 
+blockquote,
+q {
+  quotes: none;
+}
 
-   
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
 
-
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
